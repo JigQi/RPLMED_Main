@@ -12,20 +12,6 @@ conda activate rplmed
 
 # Install torch and torchvision
 pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cu118
-```
-
-* Install NVIDIA CUDA runtime libraries.
-
-> **Note:** The above PyTorch installation may bundle CUDA libraries internally without exposing them as separate packages. Our environment requires the following NVIDIA CUDA packages to be installed **individually** to ensure reproducibility. Please install them explicitly:
-
-```bash
-pip install nvidia-cublas-cu11==11.10.3.66 \
-            nvidia-cufft-cu11==10.9.0.58 \
-            nvidia-curand-cu11==10.2.10.91 \
-            nvidia-cusparse-cu11==11.7.4.91 \
-            nvidia-nccl-cu11==2.14.3 \
-            nvidia-nvtx-cu11==11.7.91
-```
 
 * Clone RPLMed code repository and install requirements
 ```bash
