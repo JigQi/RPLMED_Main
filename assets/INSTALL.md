@@ -10,8 +10,7 @@ conda create -n rplmed python=3.10 -y
 # Activate the environment
 conda activate rplmed
 
-# Install torch (requires version >= 2.0.1) and torchvision
-# Please refer to https://pytorch.org/ if you need a different cuda version
+# Install torch and torchvision
 pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cu118
 ```
 
