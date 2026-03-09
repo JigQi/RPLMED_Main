@@ -5,22 +5,35 @@ This codebase is tested on Ubuntu 20.04.2 LTS with python 3.10. Follow the below
 * Setup conda environment (recommended).
 ```bash
 # Create a conda environment
-conda create -n biomedcoop python=3.10 -y
+conda create -n rplmed python=3.10 -y
 
 # Activate the environment
-conda activate biomedcoop
+conda activate rplmed
 
 # Install torch (requires version >= 2.0.1) and torchvision
 # Please refer to https://pytorch.org/ if you need a different cuda version
 pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cu118
 ```
 
-* Clone BiomedCoOp code repository and install requirements
-```bash
-# Clone BiomedCoOp code base
-git clone https://github.com/HealthX-Lab/BiomedCoOp
+* Install NVIDIA CUDA runtime libraries.
 
-cd BiomedCoOp/
+> **Note:** The above PyTorch installation may bundle CUDA libraries internally without exposing them as separate packages. Our environment requires the following NVIDIA CUDA packages to be installed **individually** to ensure reproducibility. Please install them explicitly:
+
+```bash
+pip install nvidia-cublas-cu11==11.10.3.66 \
+            nvidia-cufft-cu11==10.9.0.58 \
+            nvidia-curand-cu11==10.2.10.91 \
+            nvidia-cusparse-cu11==11.7.4.91 \
+            nvidia-nccl-cu11==2.14.3 \
+            nvidia-nvtx-cu11==11.7.91
+```
+
+* Clone RPLMed code repository and install requirements
+```bash
+# Clone RPLMed code base
+git clone https://github.com/JigQi/RPLMED_Main
+
+cd RPLMed/
 # Install requirements
 
 pip install -r requirements.txt
