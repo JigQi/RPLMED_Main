@@ -41,7 +41,7 @@ import trainers.BiomedCoOp.biomedcoop_clip
 import trainers.BiomedCoOp.biomedcoop_biomedclip
 import trainers.BiomedCoOp.biomedcoop_pubmedclip
 import trainers.BiomedCoOp.biomedcoop_pmcclip
-import trainers.RPLMed.RPLMed
+import trainers.RPLMED.RPLMED
 
 def print_args(args, cfg):
     """Print arguments and a concise config summary."""
