@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# PyTorch / Training
+*.pth
+*.pth.tar
+*.pt
+checkpoints/
+lightning_logs/
+tb_logs/
+
+# Data
+data/
+caches/
+
+# Output
+output/
+results/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# PDFs (manuscript source is tracked, but generated PDFs can be ignored)
+# manuscript.pdf and other generated PDFs
+*.pdf
+*.synctex.gz
+*.bbl
+*.blg
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.run.xml
+*.log
+*.lot
+*.lof
+*.toc
+
+# Large generated figures
+*.eps
+!Fig1.eps
+!Fig2.eps
+!Fig3.eps
+!Fig4.eps
+
+# Zip files
+*.zip
+
+# HuggingFace cache
+clip/checkpoints/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/
